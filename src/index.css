@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bgColor: #fff7ed;
+  --color-textColor: #161616;
+  --color-orange: #ff8c38;
+  --color-lightOrange: #ffcc8d;
+  --color-footer-bgColor: #252525;
+
+  --font-headingTitle: "Rubik Dirt", system-ui;
+  --font-inter: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-bgColor);
+  font-size: 16px;
+}
