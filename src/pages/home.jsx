@@ -2,7 +2,7 @@ import Btn from "../components/btn";
 export default function Home() {
   return (
     <section className="bg-black bg-[url(./bg.jpg)] p-5 bg-cover bg-center min-h-96 flex flex-col justify-center items-center text-white text-left gap-8">
-      <h1 className="text-4xl font-bold">
+      <h1 className="text-4xl text-white font-headingTitle">
         You got the travel plans, we got the travel vans.
       </h1>
       <p>

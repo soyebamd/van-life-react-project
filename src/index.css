@@ -1,22 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --color-bgColor: #fff7ed;
-  --color-textColor: #161616;
-  --color-orange: #ff8c38;
-  --color-lightOrange: #ffcc8d;
-  --color-footer-bgColor: #252525;
-
+@theme {
   --color-simple: #e17654;
   --color-luxury: #161616;
   --color-rugged: #115e59;
   --color-btnText: #ffead0;
-
+  --color-orange: #ff8c38;
   --font-headingTitle: "Rubik Dirt", system-ui;
   --font-inter: "Inter", sans-serif;
+  --color-bgColor: #fff7ed;
+  --color-textColor: #161616;
+
+  --color-lightOrange: #ffcc8d;
+  --color-footer-bgColor: #252525;
 }
 
 body {
   background-color: var(--color-bgColor);
   font-size: 16px;
+  font-family: var(--font-inter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headingTitle);
 }

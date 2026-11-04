@@ -29,7 +29,7 @@ export default function Btn({
   console.log(buttonBg);
 
   const globalClass =
-    "font-bold rounded-md flex items-center justify-center px-4";
+    "font-semibold rounded-md flex items-center justify-center px-4 text-sm";
 
   const combineClass = classNames(globalClass, btnClass, textColor, buttonBg);
 

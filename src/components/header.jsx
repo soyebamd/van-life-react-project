@@ -3,9 +3,7 @@ import { NavLink } from "react-router";
 export default function Header() {
   return (
     <header className="flex flex-wrap md:flex-nowrap md:justify-between  min-h-22.75 px-5">
-      <h1 className="text-2xl font-bold font-inter flex items-center">
-        #VANLIFE
-      </h1>
+      <h1 className="text-2xl  font-inter flex items-center">#VANLIFE</h1>
       <ul className="flex gap-4 md:gap-6 items-center font-semibold text-base grid-cols-1">
         <li>
           <NavLink
@@ -49,6 +47,10 @@ export default function Header() {
             Contact
           </NavLink>
         </li>
+
+        <NavLink to="/vans-details/:id" className="text-gray-700">
+          id test
+        </NavLink>
       </ul>
     </header>
   );

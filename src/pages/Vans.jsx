@@ -19,7 +19,7 @@ export default function Vans() {
   return (
     <>
       <div className="px-5">
-        <h1 className="text-3xl font-bold mb-8">Explore our van options</h1>
+        <h1 className="text-3xl  mb-8">Explore our van options</h1>
         <ul className="flex flex-wrap gap-4 justify-center">
           <li>
             <Btn

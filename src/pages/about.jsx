@@ -11,7 +11,7 @@ export default function About() {
         />
 
         <div className="content flex flex-col gap-6 px-5 my-10">
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-2xl ">
             Don’t squeeze in a sedan when you could relax in a van.
           </h2>
           <p>
@@ -27,7 +27,7 @@ export default function About() {
         </div>
       </section>
       <section className="bg-lightOrange p-5 m-5 my-10 rounded-sm flex flex-col gap-5 mx-6 ">
-        <h2 className="text-2xl font-bold ">Your destination is waiting.</h2>
+        <h2 className="text-2xl ">Your destination is waiting.</h2>
         <p>
           Your van is ready. Your adventure awaits. Whether you’re off for a
           weekend getaway or a cross-country expedition, we’ve got you covered
