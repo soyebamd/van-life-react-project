@@ -1,20 +1,53 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 export default function Header() {
   return (
-    <header className="grid grid-cols-2  min-h-22.75 px-5">
-      <h1 className="text-2xl font-bold font-inter flex items-center ">
+    <header className="flex flex-wrap md:flex-nowrap md:justify-between  min-h-22.75 px-5">
+      <h1 className="text-2xl font-bold font-inter flex items-center">
         #VANLIFE
       </h1>
-      <ul className="flex justify-end gap-4 md:gap-6 items-center font-semibold text-base ">
+      <ul className="flex gap-4 md:gap-6 items-center font-semibold text-base grid-cols-1">
         <li>
-          <Link to="/">Home</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-orange-500 font-bold" : "text-gray-700"
+            }
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">Vans</Link>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "text-orange-500 font-bold" : "text-gray-700"
+            }
+          >
+            Vans
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink
+            to="/vans"
+            className={({ isActive }) =>
+              isActive ? "text-orange-500 font-bold" : "text-gray-700"
+            }
+          >
+            Vans List
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-orange-500 font-bold" : "text-gray-700"
+            }
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </header>

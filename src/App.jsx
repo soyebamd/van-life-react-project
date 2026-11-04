@@ -2,9 +2,10 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import About from "./pages/about";
 import NotFound from "./pages/not-found";
+import Vans from "./pages/Vans";
 import Footer from "./components/footer";
 
-import { BrowserRouter, Routes, Route, Link } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/vans" element={<Vans />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
