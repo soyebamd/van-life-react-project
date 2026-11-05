@@ -1,7 +1,10 @@
 import Btn from "../components/Button.jsx";
 export default function Home() {
   return (
-    <section className="bg-black bg-[url(./bg.jpg)] p-5 bg-cover bg-center min-h-96 flex flex-col justify-center items-center text-white text-left gap-8">
+    <section
+      className="bg-black p-5 bg-cover bg-center min-h-96 flex flex-col justify-center items-center text-white text-left gap-8"
+      style={{ backgroundImage: "url('/bg.jpg')" }}
+    >
       <h1 className="text-4xl text-white font-headingTitle">
         You got the travel plans, we got the travel vans.
       </h1>
