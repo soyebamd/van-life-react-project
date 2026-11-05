@@ -26,8 +26,6 @@ export default function Btn({
 
   const buttonBg = buttonCategory[variant];
 
-  console.log(buttonBg);
-
   const globalClass =
     "font-semibold rounded-md flex items-center justify-center px-4 text-sm";
 

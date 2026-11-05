@@ -1,19 +1,23 @@
 import Btn from "./btn";
 
+import { NavLink } from "react-router";
+
 export default function PostCard({ item }) {
   const { name, price, description, imageUrl, type, variant } = item;
 
   return (
     <article className="flex flex-col">
-      <img src={imageUrl} alt={name} className="rounded-[5px] w-full" />
+      <NavLink to={`/vans-details/${item.id}`}>
+        <img src={imageUrl} alt={name} className="rounded-[5px] w-full" />
 
-      <div className="flex font-semibold justify-between text-xl my-2">
-        <h2>{name}</h2>
+        <div className="flex font-semibold justify-between text-xl my-2">
+          <h2>{name}</h2>
 
-        <p>
-          ${price}/<span className="text-xs">day</span>
-        </p>
-      </div>
+          <p>
+            ${price}/<span className="text-xs">day</span>
+          </p>
+        </div>
+      </NavLink>
 
       <Btn
         variant={type}

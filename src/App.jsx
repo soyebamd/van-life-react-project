@@ -5,6 +5,7 @@ import NotFound from "./pages/not-found";
 import Vans from "./pages/Vans";
 import VansDetails from "./pages/vansDetails";
 import Footer from "./components/footer";
+import SiteLayout from "./layouts/siteLayout";
 
 import { BrowserRouter, Routes, Route } from "react-router";
 
@@ -12,19 +13,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <main className="max-w-137 mx-auto">
-          <Header />
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/vans" element={<Vans />} />
-            <Route path="/vans-details/:id" element={<VansDetails />} />
+        <Routes>
+          <Route path="/" element={<SiteLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="vans" element={<Vans />} />
+            <Route path="vans-details/:id" element={<VansDetails />} />
             <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
-
-        <Footer />
+          </Route>
+        </Routes>
       </BrowserRouter>
     </>
   );

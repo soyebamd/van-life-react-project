@@ -47,10 +47,6 @@ export default function Header() {
             Contact
           </NavLink>
         </li>
-
-        <NavLink to="/vans-details/:id" className="text-gray-700">
-          id test
-        </NavLink>
       </ul>
     </header>
   );
