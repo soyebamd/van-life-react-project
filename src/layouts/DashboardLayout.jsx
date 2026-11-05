@@ -7,21 +7,47 @@ export default function DashboardLayout() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/host" end>
+            <NavLink
+              to="/host"
+              className={({ isActive }) =>
+                isActive ? "text-orange-500 font-bold" : ""
+              }
+            >
               Dashboard
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/host/income">Income</NavLink>
+            <NavLink
+              to="/host/income"
+              className={({ isActive }) =>
+                isActive ? "text-orange-500 font-bold" : ""
+              }
+            >
+              Income
+            </NavLink>
           </li>
 
           <li>
-            <NavLink to="/host/vans">Vans</NavLink>
+            <NavLink
+              to="/host/vans"
+              className={({ isActive }) =>
+                isActive ? "text-orange-500 font-bold" : ""
+              }
+            >
+              Vans
+            </NavLink>
           </li>
 
           <li>
-            <NavLink to="/host/reviews">Reviews</NavLink>
+            <NavLink
+              to="/host/reviews"
+              className={({ isActive }) =>
+                isActive ? "text-orange-500 font-bold" : ""
+              }
+            >
+              Reviews
+            </NavLink>
           </li>
         </ul>
       </nav>
