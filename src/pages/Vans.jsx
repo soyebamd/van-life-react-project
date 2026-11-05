@@ -1,6 +1,6 @@
 import "../server.js";
 import { useState, useEffect } from "react";
-import Btn from "../components/btn.jsx";
+import Btn from "../components/Button.jsx";
 import PostCard from "../components/PostCard.jsx";
 
 export default function Vans() {

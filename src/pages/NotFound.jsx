@@ -1,5 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router";
-import Btn from "../components/btn";
+import { Link } from "react-router";
 export default function NotFound() {
   return (
     <section className="bg-luxury p-5 bg-cover bg-center min-h-96 flex flex-col justify-center items-center text-white text-left gap-8">

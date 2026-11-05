@@ -1,12 +1,15 @@
-import Header from "./components/header";
-import Home from "./pages/home";
-import About from "./pages/about";
-import NotFound from "./pages/not-found";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import NotFound from "./pages/NotFound.jsx";
 import Vans from "./pages/Vans";
-import VansDetails from "./pages/vansDetails";
-import Footer from "./components/footer";
-import SiteLayout from "./layouts/siteLayout";
+import VansDetails from "./pages/VansDetails.jsx";
 
+import SiteLayout from "./layouts/SiteLayout.jsx";
+import DashboardLayout from "./layouts/DashboardLayout.jsx";
+import Dashboard from "./pages/dashboard/Dashboard.jsx";
+import Income from "./pages/dashboard/Income.jsx";
+import Reviews from "./pages/dashboard/Reviews.jsx";
+import VansDashboard from "./pages/dashboard/Vans.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
@@ -20,6 +23,14 @@ function App() {
             <Route path="vans" element={<Vans />} />
             <Route path="vans-details/:id" element={<VansDetails />} />
             <Route path="*" element={<NotFound />} />
+
+            <Route path="/host" element={<DashboardLayout />}>
+              <Route index element={<Dashboard />} />
+              <Route path="income" element={<Income />} />
+              <Route path="reviews" element={<Reviews />} />
+              <Route path="vans" element={<VansDashboard />} />
+              <Route path="vans/:id" element={<VansDetails />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

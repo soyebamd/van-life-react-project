@@ -1,4 +1,4 @@
-import Btn from "./btn";
+import Btn from "./Button.jsx";
 
 import { NavLink } from "react-router";
 

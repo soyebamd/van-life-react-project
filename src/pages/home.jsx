@@ -1,4 +1,4 @@
-import Btn from "../components/btn";
+import Btn from "../components/Button.jsx";
 export default function Home() {
   return (
     <section className="bg-black bg-[url(./bg.jpg)] p-5 bg-cover bg-center min-h-96 flex flex-col justify-center items-center text-white text-left gap-8">

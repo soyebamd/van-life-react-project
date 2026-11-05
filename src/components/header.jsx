@@ -47,6 +47,17 @@ export default function Header() {
             Contact
           </NavLink>
         </li>
+
+        <li>
+          <NavLink
+            to="/host"
+            className={({ isActive }) =>
+              isActive ? "text-orange-500 font-bold" : "text-gray-700"
+            }
+          >
+            Dashboard
+          </NavLink>
+        </li>
       </ul>
     </header>
   );

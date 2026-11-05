@@ -1,4 +1,4 @@
-import Btn from "../components/btn";
+import Btn from "../components/Button.jsx";
 export default function About() {
   return (
     <>
